@@ -1,0 +1,34 @@
+﻿@model ShanesAPP.Model.GoogleUserResultModel
+
+@{
+    @if (Model.IsValid)
+    {
+        <div>@Model.ErrorMessage</div>
+    }
+    <table>
+        <tr>
+            <td><b>Id:</b></td>
+            <td>@Model.Id</td>
+        </tr>
+        <tr>
+            <td><b>Name:</b></td>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <td><b>Given Name:</b></td>
+            <td>@Model.Given_Name</td>
+        </tr>
+        <tr>
+            <td><b>Family Name</b></td>
+            <td>@Model.Family_Name</td>
+        </tr>
+        <tr>
+            <td><b>Picture</b></td>
+            <td>@Model.Picture</td>
+        </tr>
+        <tr>
+            <td><b>Locale</b></td>
+            <td>@Model.Locale</td>
+        </tr>
+    </table>
+}

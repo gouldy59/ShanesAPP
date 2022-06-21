@@ -1,0 +1,36 @@
+﻿@model ShanesAPP.Model.HomePageModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please make a request</p>
+    @{
+        if (TempData.Peek("ErrorMessage") != null)
+        {
+            <p>
+                <b>Error: @TempData.Peek("ErrorMessage")</b>
+            </p>
+        }
+
+        @if (Model.IsValid)
+        {
+            <button id="getUserInfo" type="button" >Get User Information</button>
+            <input type="button" value="Logout" onclick="location.href='@Url.Action("Logout", "Home")'" />
+            <div id="userInfo"></div>
+        }
+        else
+        {
+            <input type="button" value="Authorize" onclick="location.href='@Url.Action("Authorize", "Home")'" />
+        }
+    }
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+<script>
+    $(function() {
+        $("#getUserInfo").click(function(){
+            $("#userInfo").load('@Url.Action("GetUserInfo","Home")');
+        });
+    });
+</script>
