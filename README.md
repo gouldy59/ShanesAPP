@@ -1,12 +1,18 @@
 # ReadMe
 
-Prerequisite
-  .Net 6 needs to be installed
-  
+<h3>Prerequisite</h3>
+  Net 6 needs to be installed
+
+<h3>Description</h3>
 This app uses Google to demonstrate oAuth2 authorization code flow. Google has to have a predefined user when app is unpublished so please use the below emails when testing.
 
+<h4>
 Email: shane2.gould2@gmail.com,	shanetester.shanetester@gmail.com
+</h4>
+<h4>
+
 Password: PpRex6C+`Ue5@W3.
+</h4>
 
 All configuration is in the appsettings.json file. These values i would normally use keyvault or deployment variables.
 
