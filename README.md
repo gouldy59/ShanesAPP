@@ -1,8 +1,8 @@
 # ReadMe
 
-This app uses Google to demonstrate oAuth2 authorization code flow. Google has to have a predefined user so please use the below email when testing.
+This app uses Google to demonstrate oAuth2 authorization code flow. Google has to have a predefined user when app is unpublished so please use the below emails when testing.
 
-Email: shane2.gould2@gmail.com
+Email: shane2.gould2@gmail.com,	shanetester.shanetester@gmail.com
 Password: PpRex6C+`Ue5@W3.
 
 All configuration is in the appsettings.json file. These values i would normally use keyvault or deployment variables.
